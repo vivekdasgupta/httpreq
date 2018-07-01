@@ -1,7 +1,7 @@
 package httpreq
 
 import (
-	"my9httpreq"
+	"httpreq"
 	"testing"
 )
 
@@ -18,7 +18,7 @@ func TestMakeUrl(t *testing.T) {
 
 func TestSendHttpRequest(t *testing.T) {
 
-	var req my9httpreq.HttpReq
+	var req httpreq.HttpReq
 	req.Url = TEST_URL
 	req.Method = "GET"
 	req.Reqdata = nil
